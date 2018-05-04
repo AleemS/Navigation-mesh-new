@@ -21,7 +21,7 @@ public class EnemyMove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         float dist = Vector3.Distance(target.position, transform.position);
-
+       // distanceAwayBy = Vector3.Distance(target.position - thisObject.position);
         if(target)
         {
             navCompontent.SetDestination(target.position);
